@@ -1,5 +1,5 @@
-describe('closure test cases', function() {
-  it('a closure should remember its scope', function() {
+describe('Closure', function() {
+  it('should remember its scope', function() {
     var bread = 'bread';
     var fetchBread = function() {
       return bread
@@ -16,7 +16,7 @@ describe('closure test cases', function() {
     fetchBread().should.be.equal(bread);
     shop.fetch().should.be.equal('freshBread')
   })
-  it('closure should remember its scope in a circulate', function() {
+  it('hould remember its scope in a circulate', function() {
     var doms = [{name:'div'}, {name:'p'}, {name:'span'}, {name:'img'}];
     var i, len = doms.length;
     for(i = 0; i < len; i++) {
