@@ -1,0 +1,13 @@
+JS Fundamental Workshop
+------------------------
+
+#Dependecies
+
+- Nodejs from nvm [https://github.com/creationix/nvm]
+- Mocha from npm [https://www.npmjs.com/package/mocha]
+
+#Installation
+
+```
+cd school-js-fundamental-workshop && npm i
+```
