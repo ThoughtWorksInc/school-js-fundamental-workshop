@@ -1,4 +1,4 @@
-describe('Async Function', function() {
+describe.skip('Async Function', function() {
   it('should have a callback to return its status or values', function(done) {
     this.timeout(3000)
     function delay(callback, arg) {
