@@ -1,11 +1,7 @@
 {
   "name": "school-js-fundamental-workshop",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "version": "0.1.0",
+  "description": "A workshop help to get fundamental knowlegde of Javascript",
   "dependencies": {
     "should": "^5.2.0"
   },
