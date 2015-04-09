@@ -1,5 +1,5 @@
-describe('closure test cases', function() {
-  it('a closure should remember its scope', function() {
+describe('Closure', function() {
+  it('should remember its scope', function() {
     var bread = 'bread';
     var fetchBread = function() {
       return bread
