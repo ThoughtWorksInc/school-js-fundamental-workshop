@@ -10,7 +10,7 @@ describe('Cart', function() {
 
   describe('init', function() {
     it('should be able to load cart item from a txt file', function() {
-      cart.loadTxt(path.join(__dirname, '../assets/cart.txt'));
+      cart.loadCartTxt(path.join(__dirname, '../assets/cart.txt'));
       cart.items.length.should.above(0)
     })
   })
