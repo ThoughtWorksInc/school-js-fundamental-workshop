@@ -17,7 +17,7 @@ describe('Cart', function() {
 
   describe('behavior', function() {
     beforeEach(function() {
-      cart.loadTxt(path.join(__dirname, '../assets/cart.txt'));
+      cart.loadCartTxt(path.join(__dirname, '../assets/cart.txt'));
     })
     it('should be able to print cart info', function() {
       cart.print().should.be.containEql('购物明细（数量 单价 小计）')
