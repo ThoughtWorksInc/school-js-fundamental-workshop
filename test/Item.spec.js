@@ -28,5 +28,30 @@ describe('Item', function() {
       item.setPrice(100)
       item.count().should.be.equal(100 * 100)
     })
+    it('should be able to load a promotion method and bind this', function() {
+      item.setNumber(100)
+      item.setPrice(100)
+      item.loadPromotion(function(price) {
+        item.should.be.equal(this)
+        return price/2
+      })
+      item.count().should.be.equal(100 * 100 / 2)
+    })
+    it('should be able to load multiple promotions method', function() {
+      item.setNumber(100)
+      item.setPrice(100)
+      item.loadPromotion(function(price) {
+        price.should.be.equal(100)
+        item.should.be.equal(this)
+        return price/2
+      })
+      item.loadPromotion(function(price) {
+        price.should.be.equal(50)
+        item.should.be.equal(this)
+        return price/2
+      })
+
+      item.count().should.be.equal(100 * 100 / 4)
+    })
   })
 })
